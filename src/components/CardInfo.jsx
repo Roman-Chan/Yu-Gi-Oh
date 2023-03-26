@@ -10,7 +10,7 @@ function CardInfo() {
         "https://db.ygoprodeck.com/api/v7/cardinfo.php"
       );
       const data = await response.json();
-      setCards(data.data.slice(0,50)); 
+      setCards(data.data.slice(15,50)); 
       console.log(cards)
       console.log(data)
     }

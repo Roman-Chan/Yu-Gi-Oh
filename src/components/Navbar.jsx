@@ -64,21 +64,6 @@ function Navbar() {
         </div>
       </nav>
     </div>
-    /*  <div >
-      <nav className=" justify-between px-10 py-5 items-center  bg-blue-900 shadow-xl fixed inset-x-0 top-0 text-white">
-        <h1 className="text-xl text-white font-bold">Josue</h1>
-        <div className="flex justify-center items-center pr-10 bg-" >
-          <ul className="flex items-center space-x-6">
-            <li className="font-semibold text-white">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="font-semibold text-white">
-              <Link to="/perfil">perfil</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div> */
   );
 }
 
