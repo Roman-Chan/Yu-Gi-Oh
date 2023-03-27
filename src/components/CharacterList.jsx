@@ -16,31 +16,18 @@ function CharacterList({ data }) {
   };
 
   return (
-    <div className=" pt-28 px-8 mx-auto max-w-8xl py-12">
+    <div className="pt-28 px-8 mx-auto max-w-8xl py-12">
       <div className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {data.map((character, index) => (
           <div className="" key={index}>
             <div className="my-2 rounded shadow-lg shadow-gray-200 dark:shadow-gray-400 bg-white dark:bg-blue-900   ">
-              <img
-                src={character.card_images[0].image_url}
-                className="rounded-t h-auto w-full object-cover"
-                alt={character.name}
-              />
-              <div className="text-center">
-                <h5 className="text-5x1 mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
-                  {character.name}
-                </h5>
-                <p className="leading-5 text- dark:text-white">
-                  {character.type}
-                </p>
-                <button
-                  type="button"
-                  className="border border-green-500 bg-green-500 text-white rounded-md px-3 py-1 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline "
-                  onClick={() => handleOpenModal(character)}
-                >
-                  Ver detalles
-                </button>
-              </div>
+              <a onClick={() => handleOpenModal(character)}>
+                <img
+                  src={character.card_images[0].image_url}
+                  className="rounded-t h-auto w-full object-cover"
+                  alt={character.name}
+                />
+              </a>
             </div>
           </div>
         ))}

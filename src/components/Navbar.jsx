@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <nav className="bg-white px-6  shadow-md fixed inset-x-0 top-0">
+      <nav className="bg-blue-500 px-6  shadow-md fixed inset-x-0 top-0">
         <div className="flex flex-row justify-between items-center py-2">
-          <h3 className="font-semibold text-3xl text-gray-500 pl-5">YUGIOH!</h3>
+          <h3 className="font-semibold text-3xl text-white pl-5 ">Yu-Gi-Oh!</h3>
           <div className="group flex flex-col items-center">
             <button className="p-2 rounded-lg md:hidden">
               <svg
@@ -21,8 +21,8 @@ function Navbar() {
                 />
               </svg>
             </button>
-            <div className="hidden group-hover:block md:block absolute md:static pr-10 bg-white inset-x-0 top-16 py-3 shadow-md md:shadow-none text-gray-600">
-              <div className="flex flex-row justify-center items-center text-center font-semibold text-gray-500">
+            <div className="hidden group-hover:block md:block absolute md:static pr-10 bg-blue inset-x-0 top-16 py-3 shadow-md md:shadow-none text-gray-600">
+              <div className="flex flex-row justify-center items-center text-center font-semibold text-white">
                 <Link
                   to="/"
                   className="px-6 py-1 flex flex-col md:flex-row md:items-center"

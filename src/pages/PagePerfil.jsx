@@ -1,9 +1,12 @@
 import React from 'react'
+import CardinfoPerfil from "./../components/CardinfoPerfil"
 
 function PagePerfil() {
   return (
-    <div className=' flex'>PagePerfil</div>
-  )
+    <div className="" >
+      <CardinfoPerfil />
+    </div>
+  );
 }
 
 export default PagePerfil
